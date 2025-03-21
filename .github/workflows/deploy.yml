@@ -28,9 +28,6 @@ jobs:
     - name: Build project
       run: npm run build
     
-    - name: List files in build folder (debugging)
-      run: ls -la ./build # Verifique se os arquivos foram gerados corretamente
-    
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v4
       with:
@@ -49,10 +46,7 @@ jobs:
       with:
         name: production-files
         path: ./build
-
-    - name: List files after download (debugging)
-      run: ls -la ./build # Verifique se os arquivos foram baixados corretamente
-
+        
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v4
       with:
