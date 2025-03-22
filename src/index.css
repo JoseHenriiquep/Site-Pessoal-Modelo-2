@@ -38,18 +38,17 @@ span{
 
 .services:hover {
   transition: all 0.3s ease;
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .services:hover .card-body{
   color: #fff;
   background-color: var(--purple);
-  
 } 
 
 .projetos:hover {
   transition: all 0.3s ease;
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .projetos:hover img,
@@ -57,3 +56,9 @@ span{
   background-color: var(--purple);
   cursor: pointer;
 } 
+
+.contato:hover{
+  transition: all 0.3s ease;
+  transform: scale(1.08);
+  background-color: var(--purple) !important;
+}
