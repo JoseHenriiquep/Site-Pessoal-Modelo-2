@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, Navbar, NavbarToggler, Collapse, NavbarBrand, NavItem, NavLink } from "reactstrap"
+import { Nav, Navbar, NavbarToggler, Collapse, NavItem, NavLink } from "reactstrap"
 import { Link, animanteScroll as scroll } from "react-scroll"
 
 const Header = () => {
@@ -9,29 +9,26 @@ const Header = () => {
 
     return(
         <>
-            <Navbar expand="md" className="navigation">
-                <NavbarBrand>
-                    <h3> Desenvolvedor de Sistemas</h3>
-                </NavbarBrand>
+            <Navbar expand="md"  className="navigation">
                 <NavbarToggler onClick={toggle}/>
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className='ms-auto' navbar>
-                        <NavItem>
+                    <Nav navbar>
+                        <NavItem className="item">
                             <NavLink>
                                 <Link to="sobre">Sobre Mim</Link>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className="item">
                             <NavLink>
                                 <Link to="servicos">Serviços</Link>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className="item">
                             <NavLink>
                                 <Link to="projetos">Projetos</Link>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className="item">
                             <NavLink>
                                 <Link to="contato">Contato</Link> 
                             </NavLink>

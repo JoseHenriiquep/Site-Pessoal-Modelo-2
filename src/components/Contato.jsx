@@ -3,6 +3,7 @@ import { Container } from "reactstrap";
 import Button from "./Button";
 import { FaInstagram, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 
+
 function Contato() {
 
     const styles = {

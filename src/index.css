@@ -7,6 +7,11 @@
 .navigation{
   background-color: var(--lilac);
 }
+.navigation .item:hover{
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
 :root{
   --lilac: #b86dff;
